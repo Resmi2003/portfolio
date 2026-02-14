@@ -1,22 +1,27 @@
 .hero {
     background-color: #0a203d;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.hero img {
-    width: 100%;
-    height: 100%;
-}
-
-.hero nav {
+.hero-bg-img {
     position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.main-nav {
+    position: fixed;
     bottom: 95%;
     right: 3%;
-    color: #cfe9ff;
-    position: fixed;
+    z-index: 1000;
 }
 
-.hero a {
+.main-nav a {
     color: white;
     padding: 20px;
     text-decoration: none;
@@ -26,169 +31,92 @@
     position: absolute;
     top: 25%;
     color: white;
+    z-index: 1;
+    width: 100%;
 }
 
-.content h1 {
-    color: #5df2ff;
-}
+.content h1 { color: #5df2ff; }
+.content h6 { color: #d9f8ff; }
+.content h5 { margin-bottom: 20px; color: #d9f8ff; }
+.hero-desc { width: 50%; text-align: justify; line-height: 1.6; color: #c9d6e5; }
 
-.content h6 {
-    color: #d9f8ff;
-}
-
-.content p {
-    text-align: justify;
-    line-height: 1.6;
-    font-weight: 400;
-    color: #c9d6e5;
-}
-
-.content h5 {
-    margin-bottom: 20px;
-    color: #d9f8ff;
-}
-
-.icon {
-    transition: transform 1s ease-in-out;
-}
-
-.icon:hover {
+/* AQUA HOVER EFFECTS */
+.icon i { transition: transform 0.5s ease-in-out; cursor: pointer; }
+.icon i:hover {
     transform: scale(1.5);
-    color: aqua;
+    color: aqua !important;
 }
 
 .btn {
-    transition: tranform 5s ease-in-out;
+    transition: transform 0.3s ease-in-out;
     width: 200px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-right: 28px;
-    padding-left: 28px;
-
+    padding: 12px 28px;
 }
-
 .btn:hover {
-    transform: scale(1);
-    background-color: aqua;
+    transform: scale(1.1);
+    background-color: aqua !important;
 }
 
+/* NEON & TYPEWRITER */
 .neon-text {
     font-size: 4rem;
     color: #fff;
-    text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+    text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e;
     animation: glow 1.5s infinite alternate;
 }
-
 @keyframes glow {
-    0% {
-        text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
-    }
-
-    100% {
-        text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 40px #00d4ff, 0 0 80px #00d4ff, 0 0 160px #00d4ff;
-    }
+    0% { text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e; }
+    100% { text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff; }
 }
 
 .cursor {
     position: relative;
-    width: 24em;
+    width: fit-content;
     margin: 0 auto;
     border-right: 2px solid rgba(255, 255, 255, .75);
     font-size: 30px;
-    text-align: center;
     white-space: nowrap;
     overflow: hidden;
-    transform: translateY(-50%);
 }
 
-/* Animation */
+/* ANIMATION */
 .typewriter-animation {
-    animation:
-        typewriter 5s steps(50) 1s 1 normal both,
-        blinkingCursor 500ms steps(50) infinite normal;
+    animation: typewriter 5s steps(50) 1s 1 normal both, blinkingCursor 500ms infinite;
 }
 
 @keyframes typewriter {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 100%;
-    }
+    from { width: 0; }
+    to { width: 100%; }
 }
 
 @keyframes blinkingCursor {
-    from {
-        border-right-color: rgba(255, 255, 255, .75);
+    from { border-right-color: rgba(255,255,255,.75); }
+    to { border-right-color: transparent; }
+}
+
+
+/* BACKGROUNDS */
+.about-me, .skills, .project, .education, .contact { background-color: #0a203d; }
+.about-p { width: 60%; text-align: justify; color: #5df2ff; }
+.bullet { width: 42%; color: #c9d6e5; }
+.project img { height: 200px; object-fit: cover; transition: 0.5s; }
+.project img:hover { transform: scale(1.08); }
+.education i { font-size: 100px; color: white; }
+
+/* RESPONSIVE FIXES (Only for Mobile) */
+@media (max-width: 768px) {
+    .main-nav {
+        position: relative;
+        bottom: 0; right: 0;
+        text-align: center;
+        background: rgba(10, 32, 61, 0.9);
+        width: 100%;
+        padding: 10px 0;
     }
-
-    to {
-        border-right-color: transparent;
-    }
-}
-
-
-.about-me {
-    background-color: #0a203d;
-}
-
-.about-me p {
-    width: 60%;
-    text-align: justify;
-    line-height: 1.6;
-    font-weight: 50;
-    color: #5df2ff;
-}
-
-.bullet {
-    font-weight: 50;
-    width: 42%;
-}
-
-.about-left {
-    color: #c9d6e5;
-
-}
-
-.about-right {
-    color: #c9d6e5;
-}
-
-.skills {
-    background-color: #0a203d;
-}
-
-.project {
-    background-color: #0a203d;
-
-
-}
-
-.project img {
-    height: 200px;
-    transition: transform 0.5s ease-in-out;
-}
-
-.project img:hover {
-    transform: scale(1.08);
-}
-
-
-
-.skills h5 {
-    text-align: center;
-}
-
-.education {
-    background-color: #0a203d;
-}
-
-.education i {
-    font-size: 100px;
-    color: white;
-}
-
-.contact {
-    background-color: #0a203d;
+    .main-nav a { padding: 5px; font-size: 12px; }
+    .content { position: relative; top: 0; padding-top: 20px; }
+    .neon-text { font-size: 2.2rem; }
+    .hero-desc, .about-p, .bullet { width: 90% !important; }
+    .hero { height: auto !important; min-height: 100vh; }
+    .cursor { font-size: 20px; }
 }

@@ -1,32 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <!-- bs cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <!-- js cdn -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-    <!-- bs icon cdn -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <!-- fontawesome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- custom css -->
+    <!-- bootstrap cdn -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+     <!-- js cdn -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+      <!-- bootstrap icon cdn -->
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+       <!-- fontawesome cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       <!-- css cdn -->
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <!-- herosection start -->
     <div class="container-fluid hero vh-100">
-        <img src="./images/background image.jpg" alt="">
-        <nav>
+        <img src="./images/background image.jpg" alt="" class="hero-bg-img">
+        <nav class="main-nav">
             <a href="">Home</a>
             <a href="">About</a>
             <a href="">Skills</a>
@@ -39,14 +33,13 @@
             <h6 class="text-center cursor typewriter-animation">Hey, I'm</h6>
             <h1 class="text-center neon-text fw-bolder">Resmi R Menon</h1>
             <h5 class="text-center">I'm a Web Developer</h5>
-            <p class="w-50 ms-auto me-auto">I'm a Computer Science and Engineering graduate with a strong interest in
-                web development. I'm
-                currently learning MEARN Stack at Luminar Technolab to build real-world skills and hands-on experience.
+            <p class="hero-desc ms-auto me-auto">I'm a Computer Science and Engineering graduate with a strong interest in
+                web development. I'm currently learning MEARN Stack at Luminar Technolab to build real-world skills and hands-on experience.
                 I enjoy creating responsive, user-friendly websites and continuously improving my coding and
                 problem-solving abilities. My goal is to grow as a full-stack developer and work on meaningful, creative
                 projects.</p>
             <div class="icon text-center p-3 fs-5">
-                <i class="mx-2 bi-facebook"></i>
+                <i class="mx-2 bi bi-facebook"></i>
                 <i class="mx-2 bi bi-twitter"></i>
                 <i class="mx-2 bi bi-linkedin"></i>
                 <i class="mx-2 bi bi-github"></i>
@@ -58,19 +51,17 @@
                 </button>
             </div>
         </div>
-
     </div>
     <!-- end herosection -->
 
     <!-- about me section start -->
-    <div class="container-fluid about-me vh-100">
-
+    <div class="container-fluid about-me min-vh-100">
         <div class="p-5">
             <h2 class="text-center fw-bolder text-white">About Me</h2>
             <h6 class="text-center text-white">Web Developer!</h6>
         </div>
 
-        <p class="ms-auto me-auto">
+        <p class="about-p ms-auto me-auto">
             I'm a passionate web developer with a strong foundation in front-end and back-end technologies. I enjoy
             building clean, responsive, and user-focused websites that solve real problems and deliver smooth digital
             experiences. I started learning web development during my B.Tech in Computer Science, and over time it has
@@ -83,319 +74,125 @@
             lives easier.
         </p>
 
-
-        <div class="bullet d-flex ms-auto me-auto p-5 my-3">
-            <div class="about-left mx-3">
+        <div class="bullet d-flex justify-content-center text-center ms-auto me-auto p-5 my-3">
+            <div class="about-left">
                 <ul>
                     <li><strong>Name: </strong>Resmi R Menon</li>
-                    <li><strong>Qualification: </strong>B.Tech</li>
-                    <li><strong>Branch: </strong>CSE</li>
-                    <li><strong>Phone: </strong>7593006927</li>
-                </ul>
-            </div>
-
-            <div class="about-right mx-3">
-                <ul>
-                    <li><strong>Email: </strong>resmirmenonrrm@gmail.com</li>
-                    <li><strong>Birthday: </strong>9-8-2003</li>
-                    <li><strong>Location: </strong>Thrissur, Kerala</li>
-                    <li><strong>Experience: </strong>Fresher</li>
+                     <li><strong>Qualification: </strong>B.Tech</li>
+                    
                 </ul>
             </div>
         </div>
 
-
-        <div class="text-center">
-            <button class="btn rounded-pill text-dark fw-bolder btn-secondary mx-3">Hire Me</button>
-            <button class="btn rounded-pill text-dark fw-bolder btn-secondary mx-3">More About Me</button>
+        <div class="text-center pb-5">
+            <button class="btn rounded-pill text-dark fw-bolder btn-secondary mx-3 my-2">Hire Me</button>
+            <button class="btn rounded-pill text-dark fw-bolder btn-secondary mx-3 my-2">More About Me</button>
         </div>
-
     </div>
     <!-- end about me section -->
 
     <!-- skills section start -->
     <div class="skills container-fluid p-5">
         <h2 class="text-center fw-bolder text-white">My Skills</h2>
-
         <div class="row">
+            <h5 class="text-white mt-5 text-center">Technical Skills</h5>
+            <div class="col-11 col-md-7 p-4 ms-auto me-auto">
+                <div class="d-flex justify-content-between text-white"><span>HTML</span><span>100%</span></div>
+                <div class="progress mb-4"><div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%"></div></div>
+                
+                <div class="d-flex justify-content-between text-white"><span>CSS</span><span>99%</span></div>
+                <div class="progress mb-4"><div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 95%"></div></div>
 
-            <h5 class="text-white mt-5">Technical Skills</h5>
-            <div class="col-7 p-4 ms-auto me-auto">
-                <div class="d-flex justify-content-between text-white">
-                    <span>HTML</span>
-                    <span>100%</span>
-                </div>
+                <div class="d-flex justify-content-between text-white"><span>Bootstrap</span><span>99%</span></div>
+                <div class="progress mb-4"><div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 95%"></div></div>
 
-                <div>
-                    <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
-                        aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%">
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="my-5">
-                    <div class="d-flex justify-content-between text-white">
-                        <span>CSS</span>
-                        <span>95%</span>
-                    </div>
-
-                    <div>
-                        <div class="progress" role="progressbar" aria-label="Animated striped example"
-                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 95%">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="my-5">
-                    <div class="d-flex justify-content-between text-white">
-                        <span>Bootstrap</span>
-                        <span>95%</span>
-                    </div>
-
-                    <div>
-                        <div class="progress" role="progressbar" aria-label="Animated striped example"
-                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 95%">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="my-5">
-                    <div class="d-flex justify-content-between text-white">
-                        <span>Tailwind</span>
-                        <span>95%</span>
-                    </div>
-
-                    <div>
-                        <div class="progress" role="progressbar" aria-label="Animated striped example"
-                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 95%">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+                <div class="d-flex justify-content-between text-white"><span>Tailwind</span><span>99%</span></div>
+                <div class="progress mb-4"><div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 95%"></div></div>
             </div>
 
+            <h5 class="text-white mt-4 text-center">Soft Skills</h5>
+            <div class="col-11 col-md-7 p-4 ms-auto me-auto">
+                <div class="d-flex justify-content-between text-white"><span>Communication</span><span>99%</span></div>
+                <div class="progress mb-4"><div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 95%"></div></div>
 
+                <div class="d-flex justify-content-between text-white"><span>Problem Solving</span><span>99%</span></div>
+                <div class="progress mb-4"><div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 95%"></div></div>
+                
+                <div class="d-flex justify-content-between text-white"><span>Creativity</span><span>99%</span></div>
+                <div class="progress mb-4"><div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 95%"></div></div>
 
-
-            <h5 class="text-white mt-4">Soft Skills</h5>
-            <div class="col-7 p-4 ms-auto me-auto">
-                <div class="d-flex justify-content-between text-white">
-                    <span>Creativity</span>
-                    <span>95%</span>
-                </div>
-
-                <div>
-                    <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
-                        aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 95%">
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="my-5">
-                    <div class="d-flex justify-content-between text-white">
-                        <span>Communication</span>
-                        <span>95%</span>
-                    </div>
-
-                    <div>
-                        <div class="progress" role="progressbar" aria-label="Animated striped example"
-                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 95%">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="my-5">
-                    <div class="d-flex justify-content-between text-white">
-                        <span>Problem Solving</span>
-                        <span>95%</span>
-                    </div>
-
-                    <div>
-                        <div class="progress" role="progressbar" aria-label="Animated striped example"
-                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 95%">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="my-5">
-                    <div class="d-flex justify-content-between text-white">
-                        <span>Teamwork</span>
-                        <span>95%</span>
-                    </div>
-
-                    <div>
-                        <div class="progress" role="progressbar" aria-label="Animated striped example"
-                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 95%">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+                <div class="d-flex justify-content-between text-white"><span>Teamwork</span><span>99%</span></div>
+                <div class="progress mb-4"><div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 95%"></div></div>
             </div>
-
         </div>
-
-
     </div>
     <!-- end skills section -->
 
     <!-- project section start -->
-    <div class="project container-fluid vh-100 p-2">
+    <div class="project container-fluid min-vh-100 p-2">
         <h2 class="text-center text-white fw-bolder p-3">My Projects</h2>
-
         <div class="p-4 text-center">
-            <button class="btn rounded-pill text-dark fw-bolder btn-secondary mx-3">All</button>
-            <button class="btn rounded-pill text-dark fw-bolder btn-secondary mx-3">Design</button>
-            <button class="btn rounded-pill text-dark fw-bolder btn-secondary mx-3">Code</button>
+            <button class="btn rounded-pill text-dark fw-bolder btn-secondary mx-1 my-1">All</button>
+            <button class="btn rounded-pill text-dark fw-bolder btn-secondary mx-1 my-1">Design</button>
+            <button class="btn rounded-pill text-dark fw-bolder btn-secondary mx-1 my-1">Code</button>
         </div>
-
-        <div class="row p-5">
-
-            <div class="col-3">
-                <img class="w-100" src="./images/haven.png" alt="">
-            </div>
-
-            <div class="col-3">
-                <img class="w-100" src="./images/Screenshot (9).png" alt="">
-            </div>
-
-            <div class="col-3">
-                <img class="w-100" src="./images/shoe.png" alt="">
-            </div>
-
-            <div class="col-3">
-                <img class="w-100" src="./images/Screenshot (10).png" alt="">
-            </div>
-
-            <div class="col-3 mt-4">
-                <img class="w-100" src="./images/Screenshot (15).png" alt="">
-            </div>
-
-            <div class="col-3 mt-4">
-                <img class="w-100" src="./images/Screenshot (8).png" alt="">
-            </div>
-
-            <div class="col-3 mt-4">
-                <img class="w-100" src="./images/man.png" alt="">
-            </div>
-
-            <div class="col-3 mt-4">
-                <img class="w-100" src="./images/Screenshot (16).png" alt="">
-            </div>
-
+        <div class="row p-3 p-md-5">
+            <div class="col-12 col-sm-6 col-lg-3 mt-4"><img class="w-100" src="./images/haven.png" alt=""></div>
+            <div class="col-12 col-sm-6 col-lg-3 mt-4"><img class="w-100" src="./images/Screenshot (9).png" alt=""></div>
+            <div class="col-12 col-sm-6 col-lg-3 mt-4"><img class="w-100" src="./images/shoe.png" alt=""></div>
+            <div class="col-12 col-sm-6 col-lg-3 mt-4"><img class="w-100" src="./images/Screenshot (10).png" alt=""></div>
+            <div class="col-12 col-sm-6 col-lg-3 mt-4"><img class="w-100" src="./images/Screenshot (15).png" alt=""></div>
+            <div class="col-12 col-sm-6 col-lg-3 mt-4"><img class="w-100" src="./images/Screenshot (8).png" alt=""></div>
+            <div class="col-12 col-sm-6 col-lg-3 mt-4"><img class="w-100" src="./images/man.png" alt=""></div>
+            <div class="col-12 col-sm-6 col-lg-3 mt-4"><img class="w-100" src="./images/Screenshot (16).png" alt=""></div>
         </div>
-
-
     </div>
     <!-- end project section -->
 
-    <!-- education section start -->
-    <div class="education container-fluid vh-100 p-5">
-
+     <!-- education section start -->
+    <div class="education container-fluid p-5">
         <h2 class="text-center text-white fw-bolder p-4">Education</h2>
-
         <div class="row text-center">
-            <div class="col-12 p-3 text-center">
-                <i class="fa-solid fa-graduation-cap"></i>
-            </div>
-
-            <div class="col-12 p-3 text-center">
+            <div class="col-12 p-3"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="col-12 p-3">
                 <h5 class="text-white">B.Tech in Computer Science and Engineering</h5>
                 <p class="text-white">A P J Abdul Kalam Technological University</p>
                 <p class="text-white">2021-2025 | CGPA: 7.29</p>
             </div>
-
-
-            <div class="col-12 p-3 text-center">
-                <i class="fa-solid fa-computer"></i>
-            </div>
-
-            <div class="col-12 p-3 text-center">
+            <div class="col-12 p-3"><i class="fa-solid fa-computer"></i></div>
+            <div class="col-12 p-3">
                 <h5 class="text-white">MEARN Stack Course</h5>
                 <p class="text-white">Luminar Technolab</p>
                 <p class="text-white">October 2025 - Present</p>
             </div>
-
-
-
         </div>
-
-
     </div>
     <!-- end education section -->
 
     <!-- contact section start -->
     <div class="contact container-fluid p-5">
         <h2 class="text-center text-white fw-bolder">Contact Me!</h2>
-
         <div class="container p-3">
             <form action="">
-                <div class="d-flex gap-2 my-4">
-                    <input type="text" class="form-control rounded-pill" placeholder="Full Name">
-                    <input type="email" class="form-control rounded-pill" placeholder="Email Address">
+                <div class="row g-2 my-4">
+                    <div class="col-md-6"><input type="text" class="form-control rounded-pill" placeholder="Full Name"></div>
+                    <div class="col-md-6"><input type="email" class="form-control rounded-pill" placeholder="Email Address"></div>
                 </div>
-
-                <div class="my-4">
-                    <input type="text" class="form-control rounded-pill" placeholder="Email Subject">
-                </div>
-
-                <div class="my-4">
-                    <input type="text" class="form-control rounded-pill" placeholder="Mobile Number">
-                </div>
-
-                <div class="my-4">
-                    <textarea class="form-control rounded-pill" name="" id="" placeholder="Your Message"></textarea>
-                </div>
-
-                <div class="my-5 text-center">
-                    <button class="btn rounded-pill text-dark fw-bolder btn-secondary mx-3">Send Message</button>
-
-                </div>
-
+                <div class="my-4"><input type="text" class="form-control rounded-pill" placeholder="Email Subject"></div>
+                <div class="my-4"><input type="text" class="form-control rounded-pill" placeholder="Mobile Number"></div>
+                <div class="my-4"><textarea class="form-control rounded-pill" placeholder="Your Message"></textarea></div>
+                <div class="my-5 text-center"><button class="btn rounded-pill text-dark fw-bolder btn-secondary">Send Message</button></div>
             </form>
-
         </div>
-
-
-
     </div>
     <!-- end contact section -->
 
     <!-- footer section start -->
-    <footer class="border border-secondary bg-secondary text-dark p-3">
-        <div class="text-center">
-            <span class="fw-bolder">&copy;2025 Resmi |</span>
-            <span class="fw-bolder">All rights reserved</span>
-            <p>Designed & developed with passion</p>
-        </div>
+    <footer class="bg-secondary text-dark p-3 text-center">
+        <span class="fw-bolder">&copy;2025 Resmi | All rights reserved</span>
+        <p>Designed & developed with passion</p>
     </footer>
     <!-- end footer section -->
 
 </body>
-
 </html>
